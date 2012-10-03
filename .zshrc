@@ -37,9 +37,15 @@ source $ZSH/oh-my-zsh.sh
 HISTSIZE=1000
 HISTFILESIZE=2000
 
+# Set auto completion on
+autoload -U compinit
+compinit
+
+# Set options
+setopt nocorrectall
+
 # Set Path
-[[ -d $HOME/bin ]] && export PATH=$PATH:$HOME/bin
-export NODE_PATH=/usr/local/node/lib/node_modules
+export PATH=$PATH:/sbin
 
 # Aliases
 alias ls='ls --color'
@@ -47,7 +53,3 @@ alias l='ls -lFh'
 alias ll='ls -ahlF'
 alias grep='grep --color=auto'
 alias rake='noglob rake'
-
-# dirs
-alias passport='cd /usr/local/www/passport'
-alias fun='cd /usr/local/www/fun'
