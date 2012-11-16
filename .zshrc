@@ -45,7 +45,8 @@ compinit
 setopt nocorrectall
 
 # Set Path
-export PATH=$PATH:/sbin
+[[ -d $HOME/bin ]] && export PATH=$PATH:$HOME/bin
+export NODE_PATH=/usr/local/node/lib/node_modules
 
 # Aliases
 alias ls='ls --color'
@@ -54,3 +55,9 @@ alias ll='ls -ahlF'
 alias grep='grep --color=auto'
 alias rake='noglob rake'
 alias echo='noglob echo'
+
+# path alias
+hash -d passport='/usr/local/www/passport'
+hash -d fun='/usr/local/www/fun'
+hash -d sysm='/home/tristan/coding/sysm'
+hash -d sysd='/home/tristan/coding/sysd'
