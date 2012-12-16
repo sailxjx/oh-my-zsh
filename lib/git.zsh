@@ -10,6 +10,7 @@ function git_prompt_info() {
 
 # Checks if working tree is dirty
 function parse_git_dirty() {
+  return 0
   local STATUS=''
   local FLAGS
   FLAGS=('--porcelain')

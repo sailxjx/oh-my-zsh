@@ -15,8 +15,8 @@ __git_svn_prompt() {
     return
 }
 
-# PROMPT='%{$fg_bold[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m:%{$fg_bold[blue]%}%c%{$reset_color%}\$$(git_prompt_info) '
-PROMPT='%{$fg_bold[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m:%{$fg_bold[blue]%}%c%{$reset_color%}\$$(__git_svn_prompt) '
+PROMPT='%{$fg_bold[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m:%{$fg_bold[blue]%}%c%{$reset_color%}\$$(git_prompt_info) '
+# PROMPT='%{$fg_bold[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m:%{$fg_bold[blue]%}%c%{$reset_color%}\$$(__git_svn_prompt) '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[red]%}["
 ZSH_THEME_GIT_PROMPT_SUFFIX="]%{$reset_color%}"
